@@ -1,7 +1,7 @@
-enum class BookStatus {
-    AVALIABLE,
-    BORROWED,
-    LOST,
-    RESERVED,
-    ARCHIVED;
+enum class BookStatus(val displayName: String) {
+    AVAILABLE("Доступна"),
+    BORROWED("Выдана"),
+    LOST("Потеряна"),
+    RESERVED("Зарезервирована"),
+    ARCHIVED("Заархивирована");
 }
